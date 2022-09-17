@@ -1,0 +1,40 @@
+-- @block
+CREATE TABLE EMPLOYEE
+(
+   Emp_no INT,
+   E_name VARCHAR(20),
+   E_address VARCHAR(20),
+   E_ph_no INT,
+   Dept_no INT,
+   Dept_name VARCHAR(20),
+   Job_id INT,
+   Salary INT
+);
+
+-- @block
+INSERT INTO EMPLOYEE VALUES(6,'Tejas','Pune',1234567890,2,'IT',1,10000);
+INSERT INTO EMPLOYEE VALUES(12,'Bhomi','Mumbai',1234567890,8,'HR',2,20000);
+INSERT INTO EMPLOYEE VALUES(5,'Jesal','Delhi',1234567890,6,'SALES',3,30000);
+INSERT INTO EMPLOYEE VALUES(8,'James','Bangalore',1234567890,4,'MECH',4,40000);
+INSERT INTO EMPLOYEE VALUES(1,'Shakti','Chennai',1234567890,10,'IT',5,50000);
+
+-- @block
+SELECT * FROM EMPLOYEE;
+
+-- @block
+SELECT * FROM EMPLOYEE WHERE Dept_no=10;
+
+-- @block
+UPDATE EMPLOYEE SET E_address='Nagpur' WHERE Emp_no=12;
+
+-- @block
+SELECT * FROM EMPLOYEE WHERE Dept_name='MECH';
+
+-- @block
+DELETE FROM EMPLOYEE WHERE E_name='James';
+
+-- @block
+SELECT * FROM EMPLOYEE;
+
+-- @block
+SELECT * FROM EMPLOYEE WHERE Dept_name='SALES';
