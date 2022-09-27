@@ -17,6 +17,7 @@ INSERT INTO Employee_new VALUES (3, 'Prem', 'HR', 4, 20000, 1000);
 INSERT INTO Employee_new VALUES (4, 'Bhomi', 'Manager', 5, 15000, 1000);
 INSERT INTO Employee_new VALUES (5, 'Shakti', 'Doctor', 6, 25000, 1000);
 INSERT INTO Employee_new VALUES (19, 'Kurizu', 'Manager', 7, 30000, 1000);
+
 -- @block
 SELECT * FROM Employee_new;
 
@@ -31,3 +32,13 @@ ALTER TABLE Employee_new RENAME COLUMN commission TO comm;
 DELETE FROM Employee_new WHERE Empno = 19;
 -- @block
 SELECT * FROM Employee_new;
+
+-- Joins
+-- @block
+SELECT Empno, Ename, Job FROM Employee_new INNER JOIN EMPLOYEE ON Employee_new.Empno = EMPLOYEE.Emp_no;
+-- @block
+SELECT Empno, Ename, Job FROM Employee_new FULL JOIN EMPLOYEE ON Employee_new.Empno = EMPLOYEE.Emp_no;
+-- @block
+SELECT Empno, Ename, Job FROM Employee_new LEFT JOIN EMPLOYEE ON Employee_new.Empno = EMPLOYEE.Emp_no;
+-- @block
+SELECT Empno, Ename, Job FROM Employee_new RIGHT JOIN EMPLOYEE ON Employee_new.Empno = EMPLOYEE.Emp_no;
