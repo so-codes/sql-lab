@@ -1,27 +1,19 @@
--- @block
-SELECT length('W3Schools.com');
-
+-- Performing various types of subqueries
 
 -- @block
-SELECT replace('SQL Tutorial', 'T', 'M');
-
-
--- @block
-SELECT substring('SQL Tutorial', 1, 3) AS ExtractString;
-
+SELECT * FROM Employee_new;
 
 -- @block
-SELECT current_timestamp;
-
-
--- @block
-SELECT day('2017/08/25') AS DayOfMonth;
-
+-- Subquery using select statement
+SELECT * FROM Employee_new WHERE Empno IN (SELECT Empno FROM Employee_new WHERE Sal > 20000);
 
 -- @block
-SELECT month('2017/08/25') AS Month;
-
+-- Subquery using update statement
+UPDATE Employee_new SET Sal = 50000 WHERE Empno IN (SELECT Empno FROM Employee_new WHERE Sal > 20000);
 
 -- @block
-SELECT year('2017/08/25') AS Year;
+-- Subquery using delete statement
+DELETE FROM Employee_new WHERE Empno IN (SELECT Empno FROM Employee_new WHERE Sal > 20000);
 
+-- @block
+SELECT * FROM Employee_new;
