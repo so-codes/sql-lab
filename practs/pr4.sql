@@ -28,7 +28,7 @@ SELECT * FROM EMPLOYEE WHERE Dept_no=10;
 UPDATE EMPLOYEE SET E_address='Nagpur' WHERE Emp_no=12;
 
 -- @block
-SELECT * FROM EMPLOYEE WHERE Dept_name='MECH';
+SELECT * FROM EMPLOYEE WHERE Dept_name='IT';
 
 -- @block
 DELETE FROM EMPLOYEE WHERE E_name='James';

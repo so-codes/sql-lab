@@ -16,4 +16,3 @@ c: = a + b;
 dbms_output.put_line('C ='||c);
 END;
 /
-

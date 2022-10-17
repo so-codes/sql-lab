@@ -5,7 +5,7 @@ SELECT length('W3Schools.com');
 SELECT replace('SQL Tutorial', 'T', 'M');
 
 -- @block
-SELECT substring('SQL Tutorial', 1, 3) AS ExtractString;
+SELECT substring('SQL Tutorial', 1, 6) AS ExtractString;
 
 -- @block
 SELECT current_timestamp;

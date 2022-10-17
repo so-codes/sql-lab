@@ -7,7 +7,6 @@ SELECT Emp_no, Salary FROM EMPLOYEE;
 -- @block
 SELECT AVG(Salary) FROM EMPLOYEE;
 
-
 -- @block
 SELECT COUNT(*) FROM EMPLOYEE;
 

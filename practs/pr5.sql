@@ -25,5 +25,7 @@ INSERT INTO EMP VALUES (104, 'Prem', 'Finance', 40, 10000);
 INSERT INTO EMP VALUES (105, 'Jesal', 'HR', 50, 10000);
 
 -- @block
-SELECT * FROM EMP;
+INSERT INTO EMP VALUES (106, 'Viraj', 'IT', 60, 10000);
 
+-- @block
+SELECT * FROM EMP;

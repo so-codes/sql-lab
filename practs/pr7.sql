@@ -21,10 +21,8 @@ INSERT INTO Employee_new VALUES (19, 'Kurizu', 'Manager', 7, 30000, 1000);
 -- @block
 SELECT * FROM Employee_new;
 
-
 -- @block
 UPDATE Employee_new SET Job = 'Engineer' WHERE Empno = 19;
-
 
 -- @block
 ALTER TABLE Employee_new RENAME COLUMN commission TO comm;

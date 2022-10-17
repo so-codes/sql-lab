@@ -10,6 +10,9 @@ create table customers (
 );
 
 -- @block
+select * FROM customers;
+
+-- @block
 SELECT * from customers;
 
 -- @block
@@ -41,6 +44,9 @@ create table customers_bkp (
     salary int
 );
 
+-- @block
+select * FROM customers_bkp;
+
 
 -- @block
 insert into customers (id, name, last_name, age, address, salary)
@@ -56,6 +62,13 @@ where id in (
         from customers
         where salary > 4500
     );
+
+-- @block
+-- Select subquery
+select * from customer
+where name in (
+    select name from customer where age > 20
+);
 
 -- @block
 -- Insert subquery

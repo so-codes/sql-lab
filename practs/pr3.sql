@@ -21,10 +21,13 @@ INSERT INTO Persons (PersonID, LastName, FirstName, Address, City) VALUES (9, 'U
 INSERT INTO Persons (PersonID, LastName, FirstName, Address, City) VALUES (10, 'Nat', 'Maki', 'Highway 80', 'Washington');
 
 -- @block
+INSERT INTO Persons (PersonID, LastName, FirstName, Address, City) VALUES (9, 'Urt', 'Criz', 'Highway 79', 'Paris');
+
+-- @block
 SELECT PersonID, FirstName, City FROM Persons;
 
 -- @block
-UPDATE Persons SET City = 'Mumbai' WHERE PersonID = 5;
+UPDATE Persons SET City = 'Dubai' WHERE PersonID = 5;
 
 -- @block
 SELECT * FROM Persons;
