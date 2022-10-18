@@ -18,4 +18,3 @@ SELECT month('2017/08/25') AS Month;
 
 -- @block
 SELECT year('2017/08/25') AS Year;
-
